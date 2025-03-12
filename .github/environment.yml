@@ -9,10 +9,10 @@ dependencies:
   - pip
   - setuptools
   - build
-  - compilers
   # conda-forge global pin as of 3/12/2025
   # https://github.com/conda-forge/conda-forge-pinning-feedstock/blob/0b30b6056c1e947ab74359ea42924c4566994f93/recipe/conda_build_config.yaml
   - flang 5
+  - vs2019_win-64
 # runtime
   - packaging
   - mdolab-baseclasses >=1.3.1
