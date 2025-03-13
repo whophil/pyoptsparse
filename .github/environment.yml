@@ -9,9 +9,8 @@ dependencies:
   - pip
   - setuptools
   - build
-  # conda-forge global pin as of 3/12/2025
-  # https://github.com/conda-forge/conda-forge-pinning-feedstock/blob/0b30b6056c1e947ab74359ea42924c4566994f93/recipe/conda_build_config.yaml
-  - flang_win-64 5
+  # compilers
+  - flang_win-64 19  # conda-forge is currently on flang 5, migrating to flang 19
   - vs2019_win-64
 # runtime
   - packaging
