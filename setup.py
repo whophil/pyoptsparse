@@ -34,7 +34,7 @@ def run_meson_build():
     setup_log = os.path.join(staging_dir, "setup.log")
     print(p1.stdout)
     with open(setup_log, "wb") as f:
-        f.write(p1.stdout)
+        f.write(p1.stdout.decode())
     if p1.returncode != 0:
         with open(setup_log, "r") as f:
             print(f.read())
@@ -47,7 +47,7 @@ def run_meson_build():
     compile_log = os.path.join(staging_dir, "compile.log")
     with open(compile_log, "wb") as f:
         f.write(p2.stdout)
-    print(p2.stdout)
+    print(p2.stdout.decode())
     if p2.returncode != 0:
         with open(compile_log, "r") as f:
             print(f.read())
