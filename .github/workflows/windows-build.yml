@@ -36,9 +36,6 @@ jobs:
           call conda activate pyos-build
           call conda list
           set MESON_ARGS=-Dipopt_dir=%CONDA_PREFIX%\Library
-          set CC_LD=%LD%
-          set CXX_LD=%LD%
-          set FC_LD=%LD%
           set
           python -m build -n -x .
           pip install --no-deps --no-index --find-links dist pyoptsparse
