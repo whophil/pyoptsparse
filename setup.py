@@ -32,9 +32,9 @@ def run_meson_build():
     sysargs = [arg for arg in sysargs if arg != ""]
     p1 = subprocess.run(sysargs, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
     setup_log = os.path.join(staging_dir, "setup.log")
-    print(p1.stdout)
+    print(p1.stdout.decode())
     with open(setup_log, "wb") as f:
-        f.write(p1.stdout.decode())
+        f.write(p1.stdout)
     if p1.returncode != 0:
         with open(setup_log, "r") as f:
             print(f.read())
