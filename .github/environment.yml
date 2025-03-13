@@ -10,7 +10,7 @@ dependencies:
   - setuptools
   - build
   # compilers
-  - gfortran_win-64
+  - flang_win-64 5*
   - vs2019_win-64
 # runtime
   - packaging
