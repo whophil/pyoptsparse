@@ -10,6 +10,9 @@ dependencies:
   - pip
   - setuptools
   - build
+  # pin flang 5, current conda-forge global pin as of 3/13/2025
+  # update to flang 19 eventually
+  - flang 5*  
 # runtime
   - packaging
   - mdolab-baseclasses >=1.3.1
