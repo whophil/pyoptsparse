@@ -5,11 +5,13 @@ dependencies:
   - ipopt
   - swig
   - meson >=1.3.2
-  - compilers
   - pkg-config
   - pip
   - setuptools
   - build
+  # compilers
+  - flang_win-64 5*  # flang version currently globally pinned on conda-forge
+  - vs2019_win-64    # activation package for VS 2019 compilers
 # runtime
   - packaging
   - mdolab-baseclasses >=1.3.1
