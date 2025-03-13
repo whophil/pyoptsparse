@@ -36,8 +36,8 @@ jobs:
           call conda activate pyos-build
           call conda list
           set MESON_ARGS=-Dipopt_dir=%CONDA_PREFIX%\Library
-          set FC=flang1.exe
-          set FC_LD=link.exe
+          set FC=flang-new
+          set FC_LD=link
           python -m build -n -x .
           pip install --no-deps --no-index --find-links dist pyoptsparse
       - name: Install runtime numpy ${{ matrix.numpy_version }}
