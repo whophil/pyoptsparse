@@ -36,7 +36,7 @@ jobs:
           call conda activate pyos-build
           call conda list
           set MESON_ARGS=-Dipopt_dir=%CONDA_PREFIX%\Library
-          set FC=flang1
+          set FC=flang
           set FC_LD=link
           python -m build -n -x .
           pip install --no-deps --no-index --find-links dist pyoptsparse
