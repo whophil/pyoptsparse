@@ -10,7 +10,7 @@ dependencies:
   - setuptools
   - build
   # compilers
-  - flang_win-64 19  # conda-forge is currently on flang 5, migrating to flang 19
+  - flang_win-64 19*
   - vs2019_win-64
 # runtime
   - packaging
